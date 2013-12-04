@@ -1,0 +1,6 @@
+authentication
+
+An extraction of the basic authentication code from Brenton Ashworth's sandbar library.  The sandbar library seems to have 'stopped' at 0.0.4-SNAPSHOT. I had previously used sandbar in some of my projects but could not easily 'release/tag' the project with maven due to the sandbar dependency being a SNAPSHOT version.  Also, the dependencies were 'locked' at older versions of ring, hiccup, etc.  So, I factored out the parts I needed.  The same copyright (Eclipse) applies as the original work.  Use as is and at your own risk.  Improvements are welcome.
+
+
+

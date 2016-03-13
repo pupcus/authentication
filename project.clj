@@ -1,4 +1,4 @@
-(defproject org.pupcus/authentication "0.0.2-SNAPSHOT"
+(defproject org.pupcus/authentication "0.0.2"
 
   :description "sandbar's authentication code factored out"
 

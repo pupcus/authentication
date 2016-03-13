@@ -15,15 +15,15 @@
         [ring.util.response :only [redirect]]))
 
 (def fixture-security-config
-     [#"/admin.*"                 [:admin :ssl] 
-      #"/idea/edit.*"             :editor
-      #"/download.*"              [#{:admin :editor} :ssl]
-      #"/secure.*"                :ssl
-      #"/login.*"                 [:any :ssl] 
-      #"/permission-denied.*"     :any
-      #".*.css|.*.png"            [:any :any-channel] 
-      #(.endsWith (:uri %) ".js") :any
-      #".*"                       [#{:admin :user} :nossl]])
+     [#"/admin.*"                          [:admin :ssl]
+      #"/idea/edit.*"                      :editor
+      #"/download.*"                       [#{:admin :editor} :ssl]
+      #"/secure.*"                         :ssl
+      #"/login.*"                          [:any :ssl]
+      #"/permission-denied.*"              :any
+      #".*.css|.*.png"                     [:any :any-channel]
+      #(.endsWith ^String (:uri %) ".js")  :any
+      #".*"                                [#{:admin :user} :nossl]])
 
 
 

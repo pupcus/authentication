@@ -32,7 +32,7 @@
 (defn cpath
   "Prefix a path starting with '/' with the context path."
   [path]
-  (if (.startsWith path "/")
+  (if (.startsWith ^String path "/")
     (str @app-context path)
     path))
 
@@ -41,7 +41,7 @@
   [path]
   (let [c @app-context]
     (if (and (not (empty? c))
-             (.startsWith path c))
+             (.startsWith ^String path c))
       (apply str (drop (count c) path))
       path)))
 

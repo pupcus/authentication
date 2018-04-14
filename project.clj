@@ -2,9 +2,9 @@
 
   :description "sandbar's authentication code factored out"
 
-  :url "https://bitbucket.org/pupcus/authentication"
+  :url "https://github.com/pupcus/authentication"
 
-  :scm {:url "git@bitbucket.org:pupcus/authentication"}
+  :scm {:url "git@github.com:pupcus/authentication.git"}
 
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
